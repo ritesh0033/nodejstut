@@ -1,6 +1,8 @@
-
-const htpp = require('http');
-htpp.createServer((req,res)=>{
-    res.write("this is ritesh kumar yadavstudying at sagarmatha engineering college at fourth year.");
+const http= require('http')
+http.createServer((req,res)=>{
+    res.writeHead(200,{'Content-Type':'application/json'})
+    res.write(JSON.stringify({name:'ritesh',mail:'ry0323535@gmail.com'}))
     res.end();
-}).listen(3000);
+
+   }).listen(5000);
+
